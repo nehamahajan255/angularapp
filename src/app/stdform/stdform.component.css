@@ -14,6 +14,9 @@ h2{
          background-color: rgb(226, 180, 180); 
 
 }
+index{
+    background-color: rgb(196, 191, 191);
+}
 label{
     color: rgb(119, 12, 96);
     font-weight: 600;
