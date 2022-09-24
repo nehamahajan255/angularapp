@@ -1,0 +1,21 @@
+/* *{
+    margin-top: 5;
+    margin-left:20;
+    padding: 2;
+background-color: rgb(168, 235, 171);
+} */
+h2{
+    text-align: center;
+    color: rgb(150, 16, 16);
+    
+}
+
+#form{
+         background-color: rgb(226, 180, 180); 
+
+}
+label{
+    color: rgb(119, 12, 96);
+    font-weight: 600;
+    font-size:larger;
+}

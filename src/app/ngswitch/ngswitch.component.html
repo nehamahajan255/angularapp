@@ -1,0 +1,46 @@
+<!-- <p>ngswitch works!</p> -->
+<!-- <div class="container">
+    <div class="col-md-4">
+        <select class="form-control"(change)="getProductValue($event)">
+            <option value="default">select product</option>
+            <option value="laptop">laptop</option>
+            <option value="mobile">mobile</option>
+            <option value="TV" >TV</option>
+        </select>
+    </div>
+<div class="col-md-12"[ngSwitch]="selectedProduct">
+<h2 class="text success" *ngSwitchDefault>plz select product</h2>
+<h2 class="text-success" *ngSwitchCase="'laptop'">laptop</h2>
+<h2 class="text-success" *ngSwitchCase="'mobile'">mobile</h2>
+<h2 class="text-success" *ngSwitchCase="'TV'">TV</h2>
+
+</div>
+</div> -->
+
+
+<div class="container" >
+    <!-- <div class="bg-secondary"> -->
+    <div class=" col-md-5">
+        <select class="form-control"(change)="getCountry($event)">
+            <option value="default"> Select country</option>
+            <option value="America">America</option>
+            <option value="canada">canada</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+            <option value="India">India</option>
+        </select>
+    </div>
+</div>
+
+    <div class="col-md-12"[ngSwitch]="selectedCountry" >
+        <h2 class="text-primary" *ngSwitchDefault>Please select country</h2>
+        <h2 class="text-success" *ngSwitchCase="'America'">America</h2>
+        <h2 class="text-success" *ngSwitchCase="'canada'">canada</h2>
+        <h2 class="text-success" *ngSwitchCase="'China'">China</h2>
+        <h2 class="text-success" *ngSwitchCase="'Germany'">Germany</h2>
+        <h2 class="text-success" *ngSwitchCase="'India'">India</h2>
+
+        
+        
+</div>
+<!-- </div> -->

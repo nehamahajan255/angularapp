@@ -1,0 +1,20 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th> <input type="text" placeholder="enter name here"> </th>
+                <th><button (click)=($event)>Submit</button></th>
+            </tr>
+            <tr>
+                <th> User name </th>
+                <th> remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let value of val " (click)=($val)>
+                <td>{{val.userName}}</td>
+                <td> <button (click)=($val) >remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

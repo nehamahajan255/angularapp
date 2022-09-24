@@ -1,0 +1,15 @@
+.container{
+    margin-left: 100;
+    margin-right: 500;
+    background-color: rgb(241, 205, 229);
+    width: 500;
+    margin-top: 150;
+    
+}
+.col-md-12{
+    margin-left: 310;
+}
+.form-control{
+    background-color: rgb(199, 201, 233);
+
+}

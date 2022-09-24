@@ -1,0 +1,40 @@
+<p>ngfor1 works!</p>
+<div>
+
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th> Singer Name</th>
+          <th> Number of songs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let songs of songs">
+          <td>{{songs.singerNm}}</td>
+          <td>{{songs.noSongs}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th> Singer Name</th>
+          <th> Number of songs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let songs of songs">
+            <ng-container *ngIf="songs.noSongs >50">
+              <td>{{songs.singerNm}}</td>
+              <td>{{songs.noSongs}} </td>
+            </ng-container>
+            </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="container ,border border-dark">
+
+  <div class="row justify-content-center" >
+
+    <div class="col-md-5  col-sm-6 col-xs-12 rounded shadow py-5" id="form">
+      <h2> Student Admission Form</h2>
+
+      <form #myForm="ngForm" (ngSubmit)="OnSubmit(myForm)">
+        <div class="form-group">
+          <label for="First name">First name</label>
+          <input type="text" class="form-control"  placeholder="Enter first name" required ngModel>
+        </div>
+        <div class="form-group">
+          <label for="Last name">Last Name</label>
+          <input type="text" class="form-control"  placeholder="Enter first name" required  ngModel>
+        </div>
+        <div class="form-group">
+          <label for="">Available courses</label>
+          <select name="course" id="course" class="form-control" required ngModel>
+            <!-- <option value="Automobile Engineering">Automobile Engineering</option>
+            <option value="chemical Engineering">chemical Engineering</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option> -->
+            <!-- <option disabled>select course</option> -->
+            <!-- <option value="default">choose course</option> -->
+  <option *ngFor="let course of courses">{{course}}</option>
+
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Gender">Gender</label>
+          <br>
+          <input type="radio" name="gender" value="Male" ngModel>
+          <label>   Male</label>
+          <input type="radio" name="gender" value="Female" ngModel>
+          <label>    Female</label>
+          <input type="radio" name="gender" value="Other" ngModel>
+          <label>  Other</label>
+      </div>
+        <div class="form-group">
+        <label for="Contact Number">Contact Number</label>
+        <input type="number" name="phone" size="10" class="form-control" ngModel
+          placeholder="Enter contact number" required>
+    </div>
+    <div class="form-group">
+      <label for="Email ID">Email ID</label>
+      <input type="email" id="email" name="email" class="form-control" ngModel placeholder="Enter email number"
+        required>
+
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input type="password" name="Password" class="form-control" ngModel placeholder="Enter Password number" required>
+
+    </div>
+    <div class="form-group">
+      <label for="Re enter Password"> Re enter Password</label>
+      <input type="password" name="rePassword" class="form-control" ngModel placeholder="Enter Re enter Password number"
+        required>
+
+    </div>
+    <button type="submit" class="btn btn-success mt-2" [disabled]="!myForm.valid">Submit</button>
+    <button type="reset" class="btn btn-danger" style="margin-left: 300; ">Reset</button>
+    </form>
+  </div>
+</div>
+</div>

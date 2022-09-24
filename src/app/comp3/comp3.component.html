@@ -1,0 +1,21 @@
+<h2>Assignment on binding</h2>
+<h3>one way binding</h3>
+<h3>1. Event binding (html=>TS)</h3>
+<p><button (click)="show()" >click here</button></p> 
+<!-- without using argument -->
+<div (click)="binding()">
+    <button (click)="binding($event)">click me</button>
+    </div>
+    <h3> 2.Interpolation binding (TS=>html)</h3>
+   <h4>{{name}}</h4> 
+    <h3> 3.property binding (TS=>html)</h3>
+    <p [innerHTML]="description"></p>
+    <p><img [src]="imageUrl" alt="" width="250" ></p>
+    <h3> Two way binding</h3>
+    <div>
+        User name : <input type="text" [(ngModel)]="lastName">
+    </div>
+    
+    <div>{{lastName}}</div>
+
+    

@@ -1,0 +1,12 @@
+<h2>comp2 works!</h2>
+<div (click)="show()">
+<button (click)="show($event)">click me</button>
+</div>
+{{name}}
+<div [innerHTML]="description"></div>
+ <img [src]="imageUrl" alt="" width="50">
+<div>
+    User name : <input type="text" [(ngModel)]="lastName">
+</div>
+
+<div>{{lastName}}</div>
