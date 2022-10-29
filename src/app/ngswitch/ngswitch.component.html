@@ -33,12 +33,14 @@
 </div>
 
     <div class="col-md-12"[ngSwitch]="selectedCountry" >
-        <h2 class="text-primary" *ngSwitchDefault>Please select country</h2>
-        <h2 class="text-success" *ngSwitchCase="'America'">America</h2>
+        <!-- //name of property selectedCountry -->
+        <h2 class="text-success" *ngSwitchCase="'America'">America</h2>  
+        <!-- //cases  -->
         <h2 class="text-success" *ngSwitchCase="'canada'">canada</h2>
         <h2 class="text-success" *ngSwitchCase="'China'">China</h2>
         <h2 class="text-success" *ngSwitchCase="'Germany'">Germany</h2>
         <h2 class="text-success" *ngSwitchCase="'India'">India</h2>
+        <h2 class="text-primary" *ngSwitchDefault>Please select country</h2>
 
         
         

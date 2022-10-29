@@ -1,0 +1,42 @@
+<p>pipedemo works!</p>
+<p>pipedemo works!</p>
+<div>
+    Today's Date :- {{presentDate | date:'fullDate'| uppercase}}
+</div>
+<hr>
+<div>
+    {{name | uppercase}}
+    <h3>slice example</h3>
+    {{name | slice:"5"}}
+</div>
+<hr>
+<div>
+    {{dob | date:'fullDate' | titlecase}}
+</div>
+<div>
+    {{todayDate}} <br>
+    {{todayDate | date:"medium"}}<br>
+    {{todayDate | date:"shortDate"}}<br>
+    {{todayDate | date:"longDate"}}<br>
+    {{todayDate | date:"fullDate"}}<br>
+    <!-- medium for whole date  -->
+    {{todayDate | date:"mediumTime" }}
+</div>
+<hr>
+<div>
+    {{price | currency:'INR'}}
+    {{price | currency:'USD'}}
+</div>
+<div>
+   {{salary | currency:'EURO'}}
+</div>
+<hr>
+<div>
+    My Observable : {{myObservable | async}}
+</div>
+<div>
+    {{per | percent:'1.2-2'}}
+</div>
+
+
+<h3>custom pipes</h3>

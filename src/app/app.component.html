@@ -1,40 +1,96 @@
- <!-- <app-form></app-form> -->
- 
- <app-stdform></app-stdform> 
-<!-- <hr> -->
-  <!-- <app-simpletemplet></app-simpletemplet>   -->
-
 <!-- <app-comp1></app-comp1> -->
+  <!-- <app-comp3></app-comp3>  -->
+
+
+
+
+<!-- <div>
+  <h2>-----------nested obj-----------------</h2>
+  <h2>{{heading}}</h2>
+  <app-nestedcomp></app-nestedcomp>
+
+</div> -->
+
+
+
+<hr>
+<h2>---------pipe demo -------------------</h2>
+<app-pipedemo></app-pipedemo> 
+<h2>----------------custome pipe----------------</h2>
+<table>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee.name | mypipe:employee.gender}}</td>
+    <td>{{employee.gender}}</td>
+    <td>{{employee.salary}}</td>
+
+  </tr>
+</table>
+
+
+
+
+<!-- <app-user-comp></app-user-comp> -->
+ <!-- <app-reactive-form></app-reactive-form> -->
+ <!-- <app-p></app-p>
+ <app-addremoveuser></app-addremoveuser> -->
+ <!-- <app-form></app-form> -->
+ <!-- <app-index></app-index> -->
+ <!-- <app-practiceform></app-practiceform> -->
+
+
+<!-- <hr>
+<a>-----------templete form---------</a>
+<app-temppractice></app-temppractice> -->
+  <!-- <app-simpletemplet></app-simpletemplet>    -->
+  <!-- <app-stdform></app-stdform>    -->
+
+
+
 <!--The content below is only a placeholder and can be replaced.-->
 <!-- <app-ng-for></app-ng-for> -->
-<!-- <app-ngclass></app-ngclass>
-<app-ngstyle></app-ngstyle>
- <app-ngfor1></app-ngfor1>  -->
+ <!-- <app-ngclass></app-ngclass> --> 
+<!-- <app-ngstyle></app-ngstyle> -->
+ <!-- <app-ngfor1></app-ngfor1>  -->
  <!-- <p appCustdir> normal para</p> -->
  <!-- <app-child (childOutput)="GetValueFromChild($event)"></app-child> -->
  
 
- <!-- <app-child [data]="fromParenttochild" (childOutput)="test"></app-child> --> -->
- <!-- <input type="text" placeholder="Input here..." #val>
-<button (click)="submitValue(val)" >SubmitValue</button>
-<app-lifecyclehooks *ngIf="isShow" [data]="value" >
+ <!-- <app-child [data]="fromParenttochild" (childOutput)="test"></app-child> --> 
+  <!-- <input type="text" placeholder="Input here..." #val>
+<button (click)="submitValue(val)" >SubmitValue</button>  -->
+
+
+
+
+<!-- <hr>
+<a>---------lifecyclehooks-------------</a>
+<a>.................refer compo= simple.component, app.comp.ts...................</a>
+your text :<input type='text' [(ngModel)="hooks"]>
+<br>
+<simple [simpleInput]="hooks"></simple>
+ from simple component folder 
+<app-lifecyclehooks-practice></app-lifecyclehooks-practice> -->
+
+<!-- <app-lifecyclehooks *ngIf="isShow" [data]="value" >
   This is from child content
+
   
 </app-lifecyclehooks>
 
-<button (click)="OnDestory()" class="btn btn-dan -->
-
+<button (click)="OnDestory()" class="btn btn-dan"></button> -->
  
-<!-- 
-<app-comp3></app-comp3>
-<app-comp1></app-comp1> -->
-<!-- <div style="text-align:center">
+
+
+
+  
+<!-- <app-comp1></app-comp1>  -->
+ <!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}
   </h1>
-</div>
+</div>  -->
 
- <app-comp2></app-comp2> -->
+ <!-- <app-comp2></app-comp2> -->
 <!-- *ngif directive -->
 <!-- <p *ngIf="condition">
   condition true add element into DOM
@@ -44,6 +100,105 @@
   condition false and remove element from DOM
 </p> --> 
 <!-- <app-ngfor></app-ngfor>  -->
-<!-- <app-ngswitch></app-ngswitch> -->
-<router-outlet></router-outlet>
+
+
+
+
+
+
+<!-- <hr>
+<h2>------------------ngswitch--------------</h2>
+ <app-ngswitch></app-ngswitch>  -->
+
+
+
+
+<!-- <hr>
+<app-ngfor1></app-ngfor1>
+<hr>
+<h2>----------------- ngIf ---------------------</h2>
+<app-ng-if></app-ng-if>
+<hr> -->
+
+
+
+
+<!-- <div *ngFor="let p of products">
+  UserName : <strong> 
+    {{p.name}}
+  </strong>
+  Id : <strong>
+    {{p.id}}
+  </strong>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+    <input type="text" #title (keyup.enter)="createPost(title)" class="form-control">
+  </div>
+  </div> -->
+
+
+
+
+  <!-- <a>---------routing----------</a>
+  <div style="padding:5">
+    <ul>
+      <li> <a routerLink='home'>Home</a></li>
+      <li><a routerLink='register user'>register user</a></li>
+      <li><a routerLink="login">login</a></li>
+    </ul>
+    <router-outlet></router-outlet> -->  -->
+<!-- placeholder to load dynamic compo , -->
+  <!-- </div>  --> -->
+
+
+
+
+
+  <!-- codemind route concept -->
+  <!-- <header>
+    <nav>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link"   routerLink="/login" routerLinkActive="active">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"   routerLink="/home" routerLinkActive="active">Home</a>
+        </li> --> 
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus"routerLinkActive="active">About us</a>
+        </li> -->
+         <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="/stdform" routerLinkActive="active">register user</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product" routerLinkActive="active">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/service" routerLinkActive="active">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/orders" routerLinkActive="active">orders</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header> -->
+  <!-- <p app-cu -->
+  <!-- <router-outlet></router-outlet>   -->
+
 <!-- <button class="btn btn-primary">Bootstrap</button> -->
+
+
+
+
+<!-- <p>----------------------practice class binding-------------------</p>
+<button class="colorStyleClass" [style.font-size.px]="20" [class.boldStyleClass]="applyStyleClass">button 1</button>
+<br>
+<button class="colorStyleClass" [style.font-size.px]="20" [class.boldStyleClass]="!applyStyleClass">button 1</button>
+<br>
+<button class="colorStyleClass" [style.font-size.px]="20" [class]="classeToApply">apply</button>
+
+
+<button (click)="onClick()"> register</button>
+{{msg}} -->

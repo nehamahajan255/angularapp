@@ -1,0 +1,5 @@
+<p>ng-if works!</p>
+<button (click)="toggleSwitch()">bulb</button>
+<div *ngIf="switch;then switchOn else switchOff "></div>
+<ng-template #switchOn>bulb is switch on</ng-template>
+<ng-template #switchOff>bulb is switch off</ng-template>

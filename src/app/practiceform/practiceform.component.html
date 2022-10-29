@@ -1,0 +1,14 @@
+<div>{{form}}</div>
+<div *ngFor="let emp of employee">
+    <tr>
+        <td>emp name:{{emp.empName}}</td>
+        <td>emp ID:{{emp.empID}}</td>
+        <td>emp Department:{{emp.Department}}</td>
+        <td>emp:salary:{{emp.salary}}</td>
+
+    </tr>
+    
+</div>
+<app-index
+ (addDept)="addItem($event)"></app-index>
+

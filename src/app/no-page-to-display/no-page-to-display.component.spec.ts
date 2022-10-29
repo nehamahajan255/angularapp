@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LifecyclehooksComponent } from './lifecyclehooks.component';
+import { NoPageToDisplayComponent } from './no-page-to-display.component';
 
-describe('LifecyclehooksComponent', () => {
-  let component: LifecyclehooksComponent;
-  let fixture: ComponentFixture<LifecyclehooksComponent>;
+describe('NoPageToDisplayComponent', () => {
+  let component: NoPageToDisplayComponent;
+  let fixture: ComponentFixture<NoPageToDisplayComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LifecyclehooksComponent ]
+      declarations: [ NoPageToDisplayComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LifecyclehooksComponent);
+    fixture = TestBed.createComponent(NoPageToDisplayComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

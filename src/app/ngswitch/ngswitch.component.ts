@@ -12,7 +12,7 @@ export class NgswitchComponent implements OnInit {
   ngOnInit() {
   }
   getCountry(value){
-    console.log(value.target.value);
+     console.log(value.target.value);
     this.selectedCountry=value.target.value;
     
   }

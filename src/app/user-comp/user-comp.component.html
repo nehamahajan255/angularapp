@@ -1,0 +1,36 @@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th> ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th> Email</th>
+            <th>Address</th>
+            <!-- <th>Geo</th> -->
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let u of users">
+            <td>{{u.id}}</td>
+            <td>{{u.name}}</td>
+            <td>{{u.username}}</td>
+            <td>{{u.email}}</td>
+            <td>{{u.address.street}}</td>
+            <!-- <td>{{u.geo.lat}}</td> -->
+        </tr>
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+

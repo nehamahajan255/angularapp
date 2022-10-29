@@ -1,6 +1,7 @@
-<!-- <div [ngStyle]="{'color': colorVal, 'background-color':'#ddd'}">
+<div [ngStyle]="applyStyles()">
     Learning Angular 8
 </div>
+<div class="table">
 <table>
     <thead>
         <tr>
@@ -10,11 +11,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngfor="let employees of Employee">
-            <td>{{Employee.name}}</td>
-            <td>{{Employee.compNm}}</td>
-            <td>{{Employee.salary}}</td>
+        <tr *ngFor="let employees of Employee">
+            <td>{{employees.name}}</td>
+            <td>{{employees.compNm}}</td>
+            <td>{{employees.salary}}</td>
         </tr>
     </tbody>
     
-</table> -->
+</table>
+</div>

@@ -1,4 +1,4 @@
-<p>ngfor1 works!</p>
+<p>structural directives</p>
 <div>
 
   <div>
@@ -10,9 +10,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let songs of songs">
-          <td>{{songs.singerNm}}</td>
-          <td>{{songs.noSongs}} </td>
+        <tr *ngFor="let songs of songs" ; index as i>
+          <td>{{i}}{{songs.singerNm}}</td>
+          <td>{{i}} {{songs.noSongs}} </td>
         </tr>
       </tbody>
     </table>

@@ -1,12 +1,15 @@
 <p appCustdir>ngclass works!</p>
-<ul *ngFor="let person of people">
-    <li [ngClass]="{
+<!-- <ul  [ngClass]="addStyle"> -->
+    <!-- <li [ngClass]="{
         'text-success': person.country === 'UK',
         'text-primary': person.country === 'USA',
         'text-danger': person.country === 'HK'
-    }">
+    }"> -->
+    <ul *ngFor="let person of people" [ngClass]="addStyle()">
+    <li >
     
         {{person.name}} {{person.country}}
+    
     </li>
   
 </ul>

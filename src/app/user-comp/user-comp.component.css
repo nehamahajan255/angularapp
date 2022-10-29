@@ -1,0 +1,12 @@
+.table{
+    table-layout: auto;
+    width: 180px;  
+    margin-left:300;
+  }
+  thead{
+    background-color: rgb(240, 152, 152);
+  }
+  tbody{
+    background-color: rgb(247, 239, 239);
+
+  }

@@ -1,0 +1,16 @@
+thead{
+    color: brown;
+    background-color: rgb(173, 114, 230);
+}
+tbody{
+    background-color:rgb(215, 192, 236) ;
+}
+table{
+    margin-left: 10;
+    margin-right: 700;
+    padding: 10;
+    /* color: brown; */
+}
+/* h2{
+    color: rgb(197, 230, 14);
+} */

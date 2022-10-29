@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DemoService } from '../sevices/demo.service';
 
 @Component({
   selector: 'app-comp2',
@@ -12,9 +13,13 @@ imageUrl = 'https://www.freecodecamp.org/news/content/images/size/w2000/2020/04/
 
   lastName : string = "Angularbinding"
 
-constructor() { }
+constructor(private demo :DemoService) { }
 
   ngOnInit() {
+    // this.demo.getUsers().subscribe((data=>{
+    //   console.log('from comp2',data);
+      
+    // }))
   }
   show (event:any) {
 console.log(`event`,event.target.innerHTML);

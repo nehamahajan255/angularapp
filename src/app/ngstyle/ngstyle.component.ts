@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngstyle.component.css']
 })
 export class NgstyleComponent implements OnInit {
-
+applyBold:string='bold';
 colorVal=`blue`;
 Employee: any []=[
   { 'name': "Sarthak" , 'compNm': "TCS" , 'salary': "34000"},
@@ -21,5 +21,11 @@ Employee: any []=[
 
   ngOnInit() {
   }
-
+applyStyles(){
+ var myStyles={
+  'font-weight' :this.applyBold,
+  'background-color' :this.colorVal
+ }
+ return myStyles;
+}
 }
